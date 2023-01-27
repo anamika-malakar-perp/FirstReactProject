@@ -1,5 +1,4 @@
 import React from 'react'
-import UserTile from '../user/UserTile'
 
 const TechnologyTile = ({props}) => {
 
