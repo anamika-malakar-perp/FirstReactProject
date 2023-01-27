@@ -1,0 +1,88 @@
+.technology-container {
+    cursor: pointer;
+    margin: auto;
+    width: 83%;
+}
+
+.technology-page {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.technology-left {
+    width: 60%;
+}
+
+.react-context {
+    padding-left: 0;
+    text-align: initial;
+    width: 70%;
+}
+
+.technology-right {
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.react-code {
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.react-heading {
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.animation-react-image {
+    width: 70%;
+    margin-bottom: 15px;
+}
+
+.skills {
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 12px;
+    padding: 3px;
+    color: #908989;
+    line-height: 1;
+    background-color: #f3eeee;
+}
+
+.skills-chip {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 350px) {
+    .technology-left {
+        display: none;
+    }
+
+    .animation-react-image {
+        width: 100%;
+    }
+
+    .react-context {
+        width: 100%;
+    }
+
+    .react-code {
+        width: 100%;
+    }
+
+    .technology-container {
+        width: unset;
+    }
+
+    .user-tile {
+        width: 100%;
+        justify-content: space-between;
+    }
+}

@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import NavigationRouters from './components/router-folder/NavigationRouters';
+import HeaderFile from './components/header/HeaderFile';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container py-3">
+      <HeaderFile/>
+      <NavigationRouters/>
     </div>
   );
 }

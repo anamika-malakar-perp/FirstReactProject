@@ -1,0 +1,18 @@
+.user-tile {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.user-image {
+    width: 16%;
+}
+
+.user-name {
+    padding-left: 0;
+}
+
+.user-icon .fab{
+    color: #ccc;
+    margin-right: 5px;
+}

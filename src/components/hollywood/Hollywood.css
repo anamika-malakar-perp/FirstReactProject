@@ -1,0 +1,60 @@
+.hollywoodTile {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.hollywood-tile {
+    display: flex;
+    flex-direction: row;
+}
+
+.hollywood-tile img {
+    border-radius: 8px;
+    height: 25vh;
+    margin-bottom: 20px;
+}
+
+.hollywood-advertisement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.advertisement {
+    width: 30%;
+    border: 1px solid #000;
+}
+
+.directed-by {
+    margin-top: 12px !important;
+    font-size: 12px;
+    color: #a09999;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 350px) {
+    .hollywood-advertisement {
+        flex-direction: column;
+    }
+
+    .hollywoodTile {
+        width: unset;
+    }
+
+    .hollywood-image {
+        margin-right: 18px;
+    }
+
+    .hollywoodInfo {
+        width: 58%;
+    }
+
+    .directed-by {
+        margin-top: 60px !important;
+    }
+
+    .advertisement {
+        width: 100%;
+        height: 100px;
+    }
+}

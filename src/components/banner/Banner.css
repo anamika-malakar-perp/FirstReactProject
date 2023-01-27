@@ -1,0 +1,44 @@
+.bannerWrapper {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 60vh;
+    margin: auto;
+    width: 83%;
+}
+
+.first-image {
+    border-radius: 8px;
+    height: 55vh;
+    width: 60%;
+    margin-right: 18px;
+}
+
+.bannerSideImages {
+    display: flex;
+    flex-direction: column;
+    height: 55vh;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.side-images {
+    border-radius: 8px;
+    height: 26vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 350px) {
+    .bannerWrapper {
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: unset;
+    }
+
+    .first-image {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
