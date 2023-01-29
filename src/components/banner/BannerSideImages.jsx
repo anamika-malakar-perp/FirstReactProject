@@ -2,7 +2,7 @@ import React from 'react';
 import './Banner.css';
 
 const BannerSideImages = ({props}) => {
-    console.log(props)
+    
     return (
         <>
             {props.map((data, i) =>

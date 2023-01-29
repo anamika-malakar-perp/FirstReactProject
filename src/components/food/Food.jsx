@@ -1,7 +1,7 @@
 import React from 'react';
 import FoodTile from './FoodTile';
 
-const Food = () => {
+const Food = ({props}) => {
   const foodTile = [
     {
       img: 'assets/balck-bean-burger.webp',
@@ -26,7 +26,7 @@ const Food = () => {
   ];
 
   return (
-    <div className='bollywood-latest-section'>
+    <div className={props ? 'home-bollywood' : 'bollywood-latest-section'}>
       <div className='bollywood-title'>
       <span className='latest-bollywood'>Latest Food Stories</span>
       <hr class="underline"/>

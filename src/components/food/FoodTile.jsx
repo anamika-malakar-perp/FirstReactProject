@@ -1,13 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FoodTile = ({props}) => {
     return (
         <>
             {props.map((data, i) =>
             <div className='fitness-tile'>
-                <img src={data.img} alt="empty"/>
-                <p className='title'>{data.title}</p>
-                <p className='description'>{data.description}</p>
+                <Link to={`/food/${data.title}`} state={{data}}>
+                    <img src={data.img} alt="empty"/>
+                    <p className='title'>{data.title}</p>
+                    <p className='description'>{data.description}</p>
+                </Link>
             </div>
             )}
         </>

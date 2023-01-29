@@ -28,6 +28,17 @@ a {
     text-decoration: none !important;
 }
 
+.header-nav {
+    position: fixed;
+    top: 0;
+    margin: auto;
+    width: 83%;
+    left: 0;
+    right: 0;
+    z-index: 8000;
+    background-color: white;
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 350px) {
     #web-navigation-menu {
         display: none;
@@ -43,6 +54,7 @@ a {
         top: 52px;
         background-color: white;
         width: 100%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
     }
 
     .header-nav {
@@ -50,7 +62,7 @@ a {
         align-items: center;
         cursor: pointer;
         display: flex;
-        position: relative;
+        width: 100%;
         border-bottom: 1px solid #ccc;
     }
 

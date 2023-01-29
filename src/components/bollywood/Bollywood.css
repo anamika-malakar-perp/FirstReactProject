@@ -1,4 +1,9 @@
 .bollywood-latest-section {
+    width: 83%;
+    margin: 80px auto 0 auto;
+}
+
+.home-bollywood {
     margin: auto;
     width: 83%;
 }
@@ -75,10 +80,20 @@ p {
     color: #a09999;
 }
 
+.full-view {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 83%;
+    margin: 90px auto 0 auto;
+}
+
 @media only screen and (max-width: 1024px) and (min-width: 350px) {
     .bollywood-latest-section {
         margin: 0;
         width: 100%;
+        margin: 45px auto 0 auto;
     }
 
     .bollywoodTile {
@@ -92,6 +107,11 @@ p {
 
     .bollywood-tile img {
         margin-bottom: 3px;
+    }
+
+    .full-view {
+        margin: 45px auto 0 auto;
+        width: unset;
     }
 
     p {

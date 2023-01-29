@@ -3,7 +3,7 @@ import HollywoodTile from './HollywoodTile';
 import './Hollywood.css';
 import Advertisement from '../advertisement/Advertisement';
 
-const Hollywood = () => {
+const Hollywood = ({props}) => {
   const hollywoodTile = [
     {
       img: 'assets/strangers-things.jpg',
@@ -26,7 +26,7 @@ const Hollywood = () => {
 ];
 
   return (
-    <div className='bollywood-latest-section'>
+    <div className={props ? 'home-bollywood' : 'bollywood-latest-section'}>
       <div className='bollywood-title'>
         <span className='latest-bollywood'>Latest Hollywood Stories</span>
         <hr class="underline"/>

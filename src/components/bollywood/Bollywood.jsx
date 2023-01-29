@@ -2,7 +2,8 @@ import React from 'react'
 import BollywoodTile from './BollywoodTile';
 import './Bollywood.css';
 
-const Bollywood = () => {
+const Bollywood = ({props}) => {
+
   const bollywoodTile = [
     {
       img: 'assets/first-movie.jfif',
@@ -25,7 +26,7 @@ const Bollywood = () => {
 ];
 
   return (
-    <div className='bollywood-latest-section'>
+    <div className={props ? 'home-bollywood' : 'bollywood-latest-section'}>
       <div className='bollywood-title'>
         <span className='latest-bollywood'>Latest Bollywood Stories</span>
         <hr class="underline"/>

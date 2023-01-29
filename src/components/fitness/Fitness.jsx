@@ -1,7 +1,7 @@
 import React from 'react';
 import FitnessTile from './FitnessTile';
 
-const Fitness = () => {
+const Fitness = ({props}) => {
   const fitnessTile = [
     {
       img: 'assets/vrkasana.jpg',
@@ -26,7 +26,7 @@ const Fitness = () => {
   ];
 
   return (
-    <div className='bollywood-latest-section'>
+    <div className={props ? 'home-bollywood' : 'bollywood-latest-section'}>
       <div className='bollywood-title'>
       <span className='latest-bollywood'>Latest Fitness Stories</span>
       <hr class="underline"/>

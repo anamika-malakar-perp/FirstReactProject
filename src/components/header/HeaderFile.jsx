@@ -14,7 +14,7 @@ const HeaderFile = () => {
     }, []);
 
     const openMenu = () => {
-        console.log(state.style)
+
         if (state.style.display === "block") {
             state.style.display = "none";
         } else {

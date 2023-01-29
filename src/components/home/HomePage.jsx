@@ -14,11 +14,11 @@ const HomePage = () => {
     return (
         <>
             <Banner props={bannerImage}/>
-            <Bollywood/>
-            <Technology/>
-            <Hollywood/>
-            <Fitness/>
-            <Food/>
+            <Bollywood props={true}/>
+            <Technology props={true}/>
+            <Hollywood props={true}/>
+            <Fitness props={true}/>
+            <Food props={true}/>
         </>
     )
 }

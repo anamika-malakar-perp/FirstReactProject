@@ -1,0 +1,10 @@
+.food-full-view-img {
+    width: 40%;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 350px) {
+    .food-full-view-img {
+        width: 100%;
+    }
+}

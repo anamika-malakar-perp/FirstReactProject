@@ -1,7 +1,7 @@
 import React from 'react';
 import TechnologyTile from './TechnologyTile';
 
-const Technology = () => {
+const Technology = ({props}) => {
   const technologyTile = [
     {
       img: 'assets/angualr.png',
@@ -24,7 +24,7 @@ const Technology = () => {
   ];
 
   return (
-    <div className='bollywood-latest-section'>
+    <div className={props ? 'home-bollywood' : 'bollywood-latest-section'}>
       <div className='bollywood-title'>
         <span className='latest-bollywood'>Latest Technology</span>
         <hr class="underline"/>
