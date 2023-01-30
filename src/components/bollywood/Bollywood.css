@@ -93,7 +93,7 @@ p {
     .bollywood-latest-section {
         margin: 0;
         width: 100%;
-        margin: 45px auto 0 auto;
+        margin: 20px auto 0 auto;
     }
 
     .bollywoodTile {
@@ -110,7 +110,7 @@ p {
     }
 
     .full-view {
-        margin: 45px auto 0 auto;
+        margin: 20px auto 0 auto;
         width: unset;
     }
 

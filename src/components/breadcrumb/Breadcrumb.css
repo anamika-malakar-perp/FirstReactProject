@@ -1,0 +1,14 @@
+.breadcrumb-data {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 350px)  {
+    .breadcrumb-data {
+        display: block;
+        text-align: left;
+        width: 106%;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+        padding: 10px;
+        margin: 37px -15px 0 -10px;
+    }
+}
