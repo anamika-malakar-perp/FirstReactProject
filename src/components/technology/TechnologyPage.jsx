@@ -1,40 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import UserTile from '../user/UserTile';
 import SkillsChip from './SkillsChip';
 import './Technology.css';
 import TechnologyTile from './TechnologyTile';
 
 const TechnologyPage = () => {
-    const userInfo = [
-        {
-            img: 'assets/user.png',
-            name: 'Dmitry Nozhenko',
-            created: 'Jan 28, 2019',
-            time: '10 min read',
-            shareIcons: true
-        }
-    ];
+    const [technologyTile, setTechnologyTile] = useState([]);
+    const [userInfo, setUserInfo] = useState([])
 
-    const technologyTile = [
-        {
-            img: 'assets/angualr.png',
-            title: 'ANGULAR',
-            description: 'Angular is a TypeScript-based, free and open-source web application framework led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS.',
-            developer: 'Google'
-        },
-        {
-            img: 'assets/react.png',
-            title: 'REACT',
-            description: 'React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.',
-            developer: 'Meta and community'
-        },
-        {
-            img: 'assets/node.webp',
-            title: 'NODE-JS',
-            description: 'Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.',
-            developer: 'Microsoft Corporation, Ryan Dahl, OpenJS Foundation, Bryan Cantrill'
-        }
-    ];
+    useEffect(() => {
+        fetch(`http://localhost:8000/technology`)
+            .then(response => response.json())
+            .then(data => {
+                setTechnologyTile(data)
+            })
+        
+        fetch(`http://localhost:8000/userinfo`)
+            .then(response => response.json())
+            .then(data => {
+                setUserInfo(data)
+            })
+    }, []);
 
     const skills = [
         'React', 'Javascript', 'Animations'
