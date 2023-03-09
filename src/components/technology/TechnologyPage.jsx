@@ -9,13 +9,13 @@ const TechnologyPage = () => {
     const [userInfo, setUserInfo] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:8000/technology`)
+        fetch(`https://blog-backend-data.onrender.com/technology`)
             .then(response => response.json())
             .then(data => {
                 setTechnologyTile(data)
             })
         
-        fetch(`http://localhost:8000/userinfo`)
+        fetch(`https://blog-backend-data.onrender.com/userinfo`)
             .then(response => response.json())
             .then(data => {
                 setUserInfo(data)

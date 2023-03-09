@@ -7,7 +7,7 @@ const Technology = ({props}) => {
   const [technologyTile, setTechnologyTile] = useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:8000/technology`)
+    fetch(`https://blog-backend-data.onrender.com/technology`)
       .then(response => response.json())
       .then(data => {
         setTechnologyTile(data)

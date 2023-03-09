@@ -5,7 +5,7 @@ const Fitness = ({props}) => {
   const [fitnessTile, setFitnessTile] = useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:8000/fitness`)
+    fetch(`https://blog-backend-data.onrender.com/fitness`)
       .then(response => response.json())
       .then(data => {
         setFitnessTile(data)

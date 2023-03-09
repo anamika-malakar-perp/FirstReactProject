@@ -7,7 +7,7 @@ const Bollywood = ({props}) => {
   const [bollywoodTile, setBollywoodTile] = useState([])
 
   useEffect(() => {
-    fetch(`http://localhost:8000/bollywood`)
+    fetch(`https://blog-backend-data.onrender.com/bollywood`)
       .then(response => response.json())
       .then(data => {
         setBollywoodTile(data)
